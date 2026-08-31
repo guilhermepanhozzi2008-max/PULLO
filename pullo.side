@@ -1,0 +1,1602 @@
+{
+  "id": "bb087d3d-9581-4d00-b77f-8713969c0b57",
+  "version": "3.0",
+  "name": "New Project",
+  "url": "http://www.google.com",
+  "urls": [
+    "http://www.google.com"
+  ],
+  "plugins": [],
+  "suites": [
+    {
+      "id": "d86f6fe1-b699-4016-abf1-71404d9a8251",
+      "name": "New Suite",
+      "parallel": false,
+      "persistSession": false,
+      "tests": [
+        "f7124c92-6ac3-4c25-817a-06cdb22535cb"
+      ],
+      "timeout": 30000
+    }
+  ],
+  "tests": [
+    {
+      "id": "f7124c92-6ac3-4c25-817a-06cdb22535cb",
+      "name": "CT001 - não permite email inválido",
+      "commands": [
+        {
+          "id": "16f6884b-a743-48db-8b99-0f6b3f2c014d",
+          "command": "open",
+          "target": "http://localhost:5173/cadastro",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(1)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "fc8363c4-d657-43ea-b23b-4ea05265b8e6",
+          "targets": [
+            [
+              "css=input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(1)",
+          "value": "Paulo",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "77bb5a5e-52e8-4b5a-bbc2-23d3e8786707",
+          "targets": [
+            [
+              "css=input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='Paulo'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(2)",
+          "value": "email@kasdkjadkjaksd",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "272502a1-8c40-40c9-97ed-340ef1ff321e",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='email@kasdkjadkjaksd'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(3)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "7b28a05e-140e-48d4-b749-28c47a98869b",
+          "targets": [
+            [
+              "css=input:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[3])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(3)",
+          "value": "18999999999",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "339c849b-6c26-4723-a67e-4e6c129bae85",
+          "targets": [
+            [
+              "css=input:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='18999999999'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[3])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(4)",
+          "value": "@Senha123",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "53de18b0-58ce-4f69-9ec7-287c335b4a7f",
+          "targets": [
+            [
+              "css=input:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='@Senha123'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[4])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.\\_primary_7rypj_14",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "278fde1d-bc46-43e5-81a1-82bf27537e50",
+          "targets": [
+            [
+              "css=.\\_primary_7rypj_14",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='submit' and text()='Entrar'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/button)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[contains(.,'Entrar')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.\\_erro_1qndq_36",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "2fd8d0d0-3fdc-4b21-ae00-cd148bae854f",
+          "targets": [
+            [
+              "css=.\\_erro_1qndq_36",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/p)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//p[contains(.,'Email invalido')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "waitForText",
+          "target": "css=.\\_erro_1qndq_36",
+          "value": "Email invalido",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "226e7d72-4314-44b9-bf87-c559299cac17",
+          "targets": [
+            [
+              "css=.\\_erro_1qndq_36",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/p)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//p[contains(.,'Email invalido')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "383ab873-1c54-4dca-afef-b3448dacd5bf",
+      "name": "CT002 - Confirmação",
+      "commands": [
+        {
+          "id": "a395d84e-d183-4904-8eae-3c6506cb8353",
+          "command": "open",
+          "target": "http://localhost:5173/cadastro",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(1)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "9419c5b5-12d8-44de-8a3d-3c451509fe72",
+          "targets": [
+            [
+              "css=input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(1)",
+          "value": "guilherme",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "182305b6-e9dc-4f84-85cd-4bbd5fa638d1",
+          "targets": [
+            [
+              "css=input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='guilherme'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.\\_formulario_1qndq_1",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "7f8ece5f-6f91-42f9-b6cf-5412823f305a",
+          "targets": [
+            [
+              "css=.\\_formulario_1qndq_1",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(2)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "48ae32fe-e6e6-497c-b829-84a505c17134",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(2)",
+          "value": "guilhermepanhozzi2008@gmail.com",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "64cd0d54-cd80-45c5-a329-1d4bf883380f",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='guilhermepanhozzi2008@gmail.com'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(3)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "25516684-ca93-419c-bed1-4b84374830e5",
+          "targets": [
+            [
+              "css=input:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[3])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(3)",
+          "value": "18996982424",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "cdb0e94f-bf71-4cfe-878d-65a127b06d75",
+          "targets": [
+            [
+              "css=input:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='18996982424'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[3])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.\\_formulario_1qndq_1",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "e9f9d4b8-b901-443c-97e1-ce406b02b33f",
+          "targets": [
+            [
+              "css=.\\_formulario_1qndq_1",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(4)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "19bbaf3e-a3a0-47c3-a918-a3ab549c8b81",
+          "targets": [
+            [
+              "css=input:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[4])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(4)",
+          "value": "@gui2008@",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "87b26b3d-aff5-48e4-addb-32aefa4942e4",
+          "targets": [
+            [
+              "css=input:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='@gui2008@'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[4])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.\\_tela_1ngwe_1",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "70605815-2435-4ca3-9f3e-1b8e75432fb7",
+          "targets": [
+            [
+              "css=.\\_tela_1ngwe_1",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.\\_primary_7rypj_14",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "07248a94-e081-448f-bebc-43f93b51ce5c",
+          "targets": [
+            [
+              "css=.\\_primary_7rypj_14",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='submit' and text()='Entrar'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/button)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[contains(.,'Entrar')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(2)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "7dc95b26-3681-498f-8574-5bd8440ad6e4",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='guilhermepanhozzi2008@gmail.com'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.\\_caixa_1ngwe_11",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "ebdd7040-7e4a-4112-9b20-011a0503e7f2",
+          "targets": [
+            [
+              "css=.\\_caixa_1ngwe_11",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(2)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "e3a1c5fb-b276-43e0-ad95-74861a4f3de6",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(2)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "2f34434a-aa96-4434-a8c9-3ec9404ec385",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(2)",
+          "value": "guilhermepanhozzi2008@gmail.com",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "b94752b1-f5bb-439d-9607-bb2059481065",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='guilhermepanhozzi2008@gmail.com'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.\\_primary_7rypj_14",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "b5a31f33-7c75-4248-87eb-1600e95733e9",
+          "targets": [
+            [
+              "css=.\\_primary_7rypj_14",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='submit' and text()='Entrar'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/button)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[contains(.,'Entrar')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "3189f8d9-1b27-4f5c-a38d-83be54437fe3",
+          "targets": [
+            [
+              "css=input",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=h1",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "5dd98f8f-31ab-42c4-b28e-47649c158893",
+          "targets": [
+            [
+              "css=h1",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/h1)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//h1[contains(.,'Confirmar conta')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=h1",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "fe540daf-da1e-49a2-acb4-ed1737b16d29",
+          "targets": [
+            [
+              "css=h1",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/h1)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//h1[contains(.,'Confirmar conta')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=h1",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "1adeb8a1-5761-4293-8cbf-60e9f50aba59",
+          "targets": [
+            [
+              "css=h1",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/h1)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//h1[contains(.,'Confirmar conta')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=h1",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "b9bf64f7-e05e-4809-b494-41b39466a04a",
+          "targets": [
+            [
+              "css=h1",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/h1)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//h1[contains(.,'Confirmar conta')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=h1",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "fa721b67-e4d6-4205-9271-b90581f6753c",
+          "targets": [
+            [
+              "css=h1",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/h1)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//h1[contains(.,'Confirmar conta')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "doubleClick",
+          "target": "css=h1",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "f65edc84-3475-43d6-a2ff-7ff63ba9b908",
+          "targets": [
+            [
+              "css=h1",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/h1)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//h1[contains(.,'Confirmar conta')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=h1",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "df9df25a-57f5-48a5-ab94-f57e0ba9c811",
+          "targets": [
+            [
+              "css=h1",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/h1)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//h1[contains(.,'Confirmar conta')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "waitForText",
+          "target": "css=h1",
+          "value": "Confirmar conta",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "639d4487-4982-442b-b67d-71bb863bd156",
+          "targets": [
+            [
+              "css=h1",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/h1)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//h1[contains(.,'Confirmar conta')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "54024e94-5a18-4929-a60a-9f1910d620be",
+      "name": "CT003 - Email duplicado",
+      "commands": [
+        {
+          "id": "3a80f7b2-08e6-40ea-b3e1-f3e6bee49680",
+          "command": "open",
+          "target": "http://localhost:5173/cadastro",
+          "value": ""
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(1)",
+          "value": "guilherme",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "f1d8252f-baa5-438a-b1c7-3d723896e5ce",
+          "targets": [
+            [
+              "css=input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='guilherme'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(2)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "e0da6cf9-2ba8-49cc-9aae-b13ab9b2a53d",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(2)",
+          "value": "guilhermepanhozzi2008@gmail.com",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "da1cc164-9d18-4356-be62-27e0e2eb07c8",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='guilhermepanhozzi2008@gmail.com'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(3)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "9319a7be-2589-4fcd-84a1-6b29c05af2ea",
+          "targets": [
+            [
+              "css=input:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[3])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(3)",
+          "value": "18999999999",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "8975980a-78ff-4455-9a55-b0c30ed016f1",
+          "targets": [
+            [
+              "css=input:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='18999999999'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[3])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(4)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "b881d8e1-2d04-4e75-9ca0-0b6a68a59709",
+          "targets": [
+            [
+              "css=input:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[4])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(4)",
+          "value": "Senha@123",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "d4cc727e-41c4-488a-9ea8-2345a5f5a8cb",
+          "targets": [
+            [
+              "css=input:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='Senha@123'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[4])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.\\_primary_7rypj_14",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "aae518bc-9019-4b90-ae06-b86928b4d0b7",
+          "targets": [
+            [
+              "css=.\\_primary_7rypj_14",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='submit' and text()='Entrar'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/button)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[contains(.,'Entrar')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(1)",
+          "value": "guilherme",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "3696a5c5-8b49-48a3-bb15-531c0e0a7baa",
+          "targets": [
+            [
+              "css=input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='guilherme'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(2)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "f85196f3-af04-4cb8-b828-fe335b6e0963",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(2)",
+          "value": "guilhermepanhozzi2008@gmail.com",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "518bbb81-6773-4ee6-87fd-57da8190a332",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='guilhermepanhozzi2008@gmail.com'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(3)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "8cd30971-6892-4502-9c3e-7ee9abadd447",
+          "targets": [
+            [
+              "css=input:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[3])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(3)",
+          "value": "189999999999",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "866be9cf-50cd-4eb7-a271-52b74b00de97",
+          "targets": [
+            [
+              "css=input:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='189999999999'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[3])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(4)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "c51b25a5-8965-4956-8471-b663b34467c4",
+          "targets": [
+            [
+              "css=input:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[4])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(4)",
+          "value": "Senha@123",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "b190ed2a-0c49-4d62-862d-f7a5d8cafb17",
+          "targets": [
+            [
+              "css=input:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='Senha@123'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[4])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.\\_primary_7rypj_14",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "91f1b00c-7e4d-4052-ad02-436cbcc2d060",
+          "targets": [
+            [
+              "css=.\\_primary_7rypj_14",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='submit' and text()='Entrar'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/button)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[contains(.,'Entrar')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.\\_formulario_1qndq_1",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "5a7911d7-f82e-4e31-9a2f-f6b0feb00ec8",
+          "targets": [
+            [
+              "css=.\\_formulario_1qndq_1",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "waitForText",
+          "target": "css=.\\_erro_1qndq_36",
+          "value": "Email ja cadastrado",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "2850086b-ac96-48b6-b884-935d4ca41e6f",
+          "targets": [
+            [
+              "css=.\\_erro_1qndq_36",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/p)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//p[contains(.,'Email ja cadastrado')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9213ce46-11ee-486b-ade1-6c3f9d0f5862",
+      "name": "CT004 - Teste de bloqueio de usuário",
+      "commands": [
+        {
+          "id": "14a06896-4b6b-4094-9727-359d825882e2",
+          "command": "open",
+          "target": "http://localhost:5173/login",
+          "value": ""
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(1)",
+          "value": "guilhermepanhozzi2008@gmail.com",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "033ca4f5-033c-471d-b283-b6574598e896",
+          "targets": [
+            [
+              "css=input:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='guilhermepanhozzi2008@gmail.com'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input)[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(2)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "1fac8288-b252-470e-81e3-4249dbe9d238",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value=''])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(2)",
+          "value": "Senha12",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "7e68f31a-b0e5-4e65-a4ce-65db81bedb2c",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='Senha12'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.\\_primary_7rypj_14",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "305b0a61-f1ff-4155-aeaf-3e739bd5996a",
+          "targets": [
+            [
+              "css=.\\_primary_7rypj_14",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='submit' and text()='Entrar'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/button)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//button[contains(.,'Entrar')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=input:nth-child(2)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "8bb54698-3aeb-4dbd-82d3-66c1cfc8eaec",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='Senha12'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "sendKeys",
+          "target": "css=input:nth-child(2)",
+          "value": "${KEY_ENTER}",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "422f373f-73aa-4df2-ab6b-cbb656b13857",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='Senha12'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(2)",
+          "value": "Senha12",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "23cf5019-7a39-4762-a5e0-19b15f68d0c6",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='Senha12'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "sendKeys",
+          "target": "css=input:nth-child(2)",
+          "value": "${KEY_ENTER}",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "c2f90631-f84d-4a35-aa5e-a6a748e7dc19",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='Senha12'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "css=input:nth-child(2)",
+          "value": "Senha12",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "ca9264c3-898b-4a16-a383-9511fc184a21",
+          "targets": [
+            [
+              "css=input:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//input[@value='Senha12'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/input[2])[1]",
+              "xpath:idRelative"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "css=.\\_erro_9htts_44",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "608ab9db-a28e-4981-ae01-a8bc7e859de3",
+          "targets": [
+            [
+              "css=.\\_erro_9htts_44",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/p)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//p[contains(.,'Usuario bloqueado por excesso de tentativas')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "waitForText",
+          "target": "css=.\\_erro_9htts_44",
+          "value": "Usuario bloqueado por excesso de tentativas",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "54cf713a-1514-4dab-82af-e574dc9d4712",
+          "targets": [
+            [
+              "css=.\\_erro_9htts_44",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='root']/main/section/form/p)[1]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//p[contains(.,'Usuario bloqueado por excesso de tentativas')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "807dd67a-b652-4d4f-9c12-b7eaccfdc488",
+      "name": "CT005 - Código invalido",
+      "commands": [
+        {
+          "id": "511cd202-31f7-4051-8921-fba8fc33c1b9",
+          "command": "open",
+          "target": "http://localhost:5173/cadastro",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "020928ca-cc2b-49d8-9330-66e70ea7059c",
+      "name": "CT006 - Entrar login",
+      "commands": [
+        {
+          "id": "6daf6d3d-ad9b-48b3-b65a-7e5bf95deb66",
+          "command": "open",
+          "target": "http://localhost:5173/login",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "snapshot": {
+    "dependencies": {},
+    "tests": [],
+    "jest": {
+      "extraGlobals": []
+    }
+  }
+}
